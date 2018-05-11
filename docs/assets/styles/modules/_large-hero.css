@@ -1,0 +1,15 @@
+.large-hero__text-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.large-hero__title {
+    font-size: 5rem;;
+    font-weight: 400;
+    color: #173475;
+    
+}
