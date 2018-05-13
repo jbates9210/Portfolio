@@ -1,0 +1,32 @@
+.btn {
+    text-align: center;
+    text-decoration: none;
+    border-radius: .9375rem;
+    background: $navyBlue;
+    padding: .9375rem;
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 700;
+    color: #FFF;
+    animation-name: colorSwap;
+    animation-duration: 3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100;
+
+    &:hover {
+        background: linear-gradient($navyBlue, $skyBlue);
+    }
+
+    @mixin atSmall {
+        font-size: 1.15rem;
+    }
+} 
+
+@keyframes colorSwap {
+    from {
+        background-color: $skyBlue;
+    }
+    to {
+        background-color: $navyBlue;
+    }
+}

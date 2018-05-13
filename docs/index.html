@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <title>Jared Bates</title>
+  <title>Jared - Portfolio</title>
   <meta name="description" content="Jared - Web and Mobile Developer">
 
   <link rel="stylesheet" href="./temp/styles/styles.css">
@@ -24,53 +24,62 @@
   </header>
 
   <div class="large-hero">
-    <img src="assets/images/header-bg.jpg">
+    <picture>
+      <source srcset="assets/images/header-bg-xlarge.png" media="(min-width: 1200px)">
+      <source srcset="assets/images/header-bg-large.png" media="(min-width: 800px)">
+      <source srcset="assets/images/header-bg-medium.png" media="(min-width: 475px)">
+      <img class="large-hero__image" srcset="assets/images/header-bg-small.png" alt="Mountain view with fog">
+    </picture>
       <div class="large-hero__text-content">
-        <h1 class="large-hero__title">Jared Bates</h1>
-        <h2 class="large-hero__subtitle">Aspiring Web and Mobile Developer</h2>
-        <p></p>
-        <p><a href="#projects">Check Out My Projects</a></p>
+        <div class="wrapper">
+          <h1 class="large-hero__title">Hi, I'm Jared :)</h1>
+          <h2 class="large-hero__subtitle">Web and Mobile Developer</h2>
+          <a class="btn" href="#projects">My Projects</a>
+        </div>
       </div>
   </div>
 
-  <div id="about">
-    <img src="assets/images/portrait.png" alt="Portrait of Jared">
-    <h2>What I&rsquo;m About</h2>
-    <p>I am a college and self-taught programmer aspiring to become a developer. My college classes taught me the powerful Java and C++, as well as some back-end languages such as SQL and PHP. In addition, I have had a class in HTML5 and CSS3 development which gave me more exposure to web development and design. For self-taught languages, I&rsquo;ve furthered my education using websites like Udemy in Swift, HTML5 and CSS3 alongside some Node.js, JavaScript, and Git/GitHub version control. I also have self-taught experience in Adobe Photoshop and Premiere.</p>
+  <div id="about" class="page-section">
+    <div class="wrapper">
+      <img src="assets/images/portrait.png" alt="Portrait of Jared">
+      <h2 class="headline">What I&rsquo;m About</h2>
+      <p>I am a college and self-taught programmer aspiring to become a developer. My college classes taught me the powerful Java and C++, as well as some back-end languages such as SQL and PHP. In addition, I have had a class in HTML5 and CSS3 development which gave me more exposure to web development and design. For self-taught languages, I&rsquo;ve furthered my education using websites like Udemy in Swift, HTML5 and CSS3 alongside some Node.js, JavaScript, and Git/GitHub version control. I also have self-taught experience in Adobe Photoshop and Premiere.</p>
 
-    <h2><strong>Frameworks</strong>, <strong>Tools</strong>, and <strong>Languages</strong> I&rsquo;ve worked with so far</h2>
-    <ul>
-      <li><strong>Languages:</strong> Swift, HTML, CSS, JavaScript, Python</li>
-      <li><strong>Back-end:</strong> PHP, MySQL</li>
-      <li><strong>Frameworks &amp; Tools:</strong> XCode, Node.js, Gulp, PostCSS</li>
-      <li><strong>Version Control:</strong> Git/GitHub</li>
-      <li><strong>Other:</strong> Adobe Photoshop and Premiere</li>
-      <li><strong>Certifications:</strong> <a href="https://the-cca.org">CCA Swift 1</a></li>
-    </ul>
+      <h2 class="headline headline--subhead"><strong>Frameworks</strong>, <strong>Tools</strong>, and <strong>Languages</strong> I&rsquo;ve worked with so far</h2>
+      <ul>
+        <li><strong>Languages:</strong> Swift, HTML, CSS, JavaScript, Python</li>
+        <li><strong>Back-end:</strong> PHP, MySQL</li>
+        <li><strong>Frameworks &amp; Tools:</strong> XCode, Node.js, Gulp, PostCSS</li>
+        <li><strong>Version Control:</strong> Git/GitHub</li>
+        <li><strong>Other:</strong> Adobe Photoshop and Premiere</li>
+        <li><strong>Certifications:</strong> <a href="https://the-cca.org">CCA Swift 1</a></li>
+      </ul>
+    </div>
   </div>
 
-  <div id="projects">
-    <h2>Projects</h2>
-    <!--Place an image of project here-->
-    <h3>Clear View Escapes</h3>
-    <h4>Fictional Travel Website</h4>
-    <p>Built using HTML5/CSS3, JavaScript, Node.js, and many other web development tools</p>
+  <div id="projects" class="page-section page-section--colorbg">
+    <div class="wrapper">
+      <h2 class="headline headline--sky">Projects</h2>
+      <!--Place an image of project here-->
+      <h3 class="project-list">Clear View Escapes</h3>
+      <h4>Fictional Travel Website</h4>
+      <p>Built using HTML5/CSS3, JavaScript, Node.js, and many other web development tools</p>
 
-    <!--Place an image of project here-->
-    <h3>TicTacToe</h3>
-    <h4>iOS Game</h4>
-    <p>Built using Swift/XCode</p>
+      <!--Place an image of project here-->
+      <h3 class="project-list">TicTacToe</h3>
+      <h4>iOS Game</h4>
+      <p>Built using Swift/XCode</p>
 
-    <!--Place an image of project here-->
-    <h3>What&rsquo;s the Weather?</h3>
-    <h4>iOS Weather App</h4>
-    <p>Built using Swift/XCode</p>
+      <!--Place an image of project here-->
+      <h3 class="project-list">What&rsquo;s the Weather?</h3>
+      <h4>iOS Weather App</h4>
+      <p>Built using Swift/XCode</p>
 
-    <!--Place an image of project here-->
-    <h3>Task List</h3>
-    <h4>iOS To-Do App</h4>
-    <p>Built using Swift/XCode</p>
-
+      <!--Place an image of project here-->
+      <h3 class="project-list">Task List</h3>
+      <h4>iOS To-Do App</h4>
+      <p>Built using Swift/XCode</p>
+    </div>
   </div>
 
   <div id="Contact">

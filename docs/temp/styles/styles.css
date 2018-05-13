@@ -342,7 +342,7 @@ template {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #333;
   }
 
@@ -351,20 +351,153 @@ img {
     height: auto;
   }
 
-.large-hero__text-content {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
+.large-hero {
+
+    border-bottom: 10px solid #173475;
 }
 
+.large-hero__image {
+        display: block;
+    }
+
+.large-hero__text-content {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-120%);
+                transform: translateY(-120%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+@media (min-width: 475px) {
+
+.large-hero__text-content {
+            -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%)
+    }
+    }
+
+@media (min-width: 800px) {
+
+.large-hero__text-content {
+            -webkit-transform: translateY(-80%);
+                    transform: translateY(-80%)
+    }
+    }
+
 .large-hero__title {
-    font-size: 5rem;;
-    font-weight: 400;
-    color: #173475;
-    
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #173475;
+        margin: 0;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
+    }
+
+@media (min-width: 475px) {
+
+.large-hero__title {
+            font-size: 4rem
+    }
+    }
+
+.large-hero__subtitle {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 1.25rem;
+        color: #173475;
+        margin: 5px;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    }
+
+@media (min-width: 475px) {
+
+.large-hero__subtitle {
+            font-size: 2rem
+    }
+    }
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    border-radius: .9375rem;
+    background: #173475;
+    padding: .9375rem;
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 700;
+    color: #FFF;
+    -webkit-animation-name: colorSwap;
+            animation-name: colorSwap;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100;
 }
+
+.btn:hover {
+        background: linear-gradient(#173475, #80A3D9);
+    }
+
+@media (min-width: 475px) {
+
+.btn {
+        font-size: 1.15rem
+}
+    }
+
+@-webkit-keyframes colorSwap {
+    from {
+        background-color: #80A3D9;
+    }
+    to {
+        background-color: #173475;
+    }
+}
+
+@keyframes colorSwap {
+    from {
+        background-color: #80A3D9;
+    }
+    to {
+        background-color: #173475;
+    }
+}
+
+.wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    padding: 4rem 0;
+}
+
+.page-section--colorbg {
+        background-color: #173475;
+        color: #FFF;
+    }
+
+.headline {
+    font-size: 2.875rem;
+    color: #173475;
+}
+
+.headline--sky {
+        color: #80A3D9;
+    }
+
+.headline--subhead {
+        font-size: 1.8rem;
+    }
+
+.project-list {
+    color: #80A3D9;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
 

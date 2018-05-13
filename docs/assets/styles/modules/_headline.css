@@ -1,0 +1,12 @@
+.headline {
+    font-size: 2.875rem;
+    color: $navyBlue;
+
+    &--sky {
+        color: $skyBlue;
+    }
+
+    &--subhead {
+        font-size: 1.8rem;
+    }
+}
