@@ -9,16 +9,12 @@
     &__text-content {
         position: absolute;
         top: 50%;
-        transform: translateY(-120%);
+        transform: translateY(-100%);
         left: 0;
         width: 100%;
         text-align: center;
 
         @mixin atSmall {
-            transform: translateY(-100%);
-        }
-
-        @mixin atMedium {
             transform: translateY(-80%);
         }
     }
