@@ -8,7 +8,7 @@
 
     &__text-content {
         position: absolute;
-        top: 50%;
+        top: 40%;
         transform: translateY(-100%);
         left: 0;
         width: 100%;
@@ -16,6 +16,10 @@
 
         @mixin atSmall {
             transform: translateY(-80%);
+        }
+
+        @mixin atMedium {
+            transform: translateY(-60%);
         }
     }
     

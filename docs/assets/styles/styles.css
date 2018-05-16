@@ -9,5 +9,6 @@
 @import 'modules/_headline';
 @import 'modules/_project-list';
 @import 'modules/_row';
-
+@import 'modules/_header-nav';
+@import 'modules/_primary-nav';
 
