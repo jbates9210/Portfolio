@@ -1,12 +1,18 @@
 .page-section {
-    padding: 1rem 0;
+    color: $fontGrey;
+    padding: 2rem 0;
 
     @mixin atMedium {
         padding: 4rem 0;
     }
 
-    &--colorbg {
-        background-color: $navyBlue;
-        color: #FFF;
+    &__about {
+        color: $fontGrey;
+        background-color: $darkBlue;
+        padding: 1.5rem;
+
+        @mixin atMedium {
+            padding: 4rem 0;
+        }
     }
 }

@@ -2,31 +2,59 @@
     text-align: center;
     text-decoration: none;
     border-radius: .9375rem;
-    background: $navyBlue;
+    background: $darkBlue;
     padding: .9375rem;
+    margin: 150px 0 25px 0;
     display: inline-block;
-    font-size: .75rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #FFF;
+    color: $fontGrey;
     animation-name: colorSwap;
     animation-duration: 3s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 100;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 
     &:hover {
-        background: linear-gradient($navyBlue, $skyBlue);
+        background: linear-gradient($blue, $darkBlue);
+    }
+
+    &:active {
+        box-shadow: none;
+        transform: translate(1px, 1px);
     }
 
     @mixin atSmall {
         font-size: 1.15rem;
     }
+
+    &__project {
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        color: $fontGrey;
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        border-radius: .9375rem;
+        background: $darkBlue;
+        padding: .9375rem;
+        margin-left: -15px;
+
+        &:hover {
+            background: linear-gradient($blue, $darkBlue);
+        }
+
+        &:active {
+            box-shadow: none;
+            transform: translate(1px, 1px);
+        }
+    }
 } 
 
 @keyframes colorSwap {
     from {
-        background-color: $skyBlue;
+        background-color: $blue;
     }
     to {
-        background-color: $navyBlue;
+        background-color: $darkBlue;
     }
 }

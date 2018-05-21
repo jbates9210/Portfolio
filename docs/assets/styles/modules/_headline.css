@@ -4,11 +4,11 @@
     }
 
     font-size: 1.9rem;
-    color: $navyBlue;
+    color: $teal;
     text-align: center;
 
-    &--sky {
-        color: $skyBlue;
+    &--alt {
+        color: $teal;
     }
 
     &--subhead {
@@ -16,6 +16,18 @@
 
         @mixin atSmall {
             font-size: 1.8rem;
+            
+        }
+
+        &__list {
+            padding: 10px;
+            text-align: center;
+
+            @mixin atSmall {
+                margin: 0 100px 0 100px;
+                text-align: left;
+                
+            }
         }
     }
 }

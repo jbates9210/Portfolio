@@ -3,7 +3,9 @@
     padding: 10px 0;
 
     &--pull-right {
-        float: right;
+        @mixin atMedium {
+            float: right;
+        }
     }
 
     ul {
@@ -14,12 +16,25 @@
 
     li {
         list-style: none;
-        float: left;
         padding-right: 30px;
+        display: inline-block;
+
+        @mixin atMedium {
+            float: left;
+            display: block;
+        }
+    }
+
+    li:last-child {
+        padding-right: 0;
+
+        @mixin atMedium {
+            padding-right: 30px;
+        }
     }
 
     a {
-        color: #FFF;
+        color: $fontGrey;
         text-decoration: none;
         padding: 15px;
     }

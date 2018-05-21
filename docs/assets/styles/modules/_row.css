@@ -1,16 +1,39 @@
 .row {
-
     @mixin clearfix;
     
+
     &__image {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: auto;
+        height: auto;
+    }
+
+    &__about {
+        text-align: justify;
+        
+        @mixin atSmall {
+        left: 50%; right: 50%;
+        margin: 0 100px 0 100px;
+        text-align: center;
+        text-align: justify;
+        }
     }
 
     &--gutters {
         margin-right: -65px;
+    }
+
+    &--gutters li strong {
+        color: $teal;
+        text-transform: uppercase;
+    }
+
+    &--gutters li a {
+        text-decoration: none;
+        color: $maroon;
+
     }
 
     &--gutters > div {
@@ -28,5 +51,11 @@
             float: left;
             width: 66.66%;
         }
+
+        &__medium-6 {
+            float: left;
+            width: 50%;
+        }
+
     } 
 }

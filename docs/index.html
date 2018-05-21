@@ -14,7 +14,7 @@
   <header class="header-nav">
     <div class="wrapper">
       <div class="header-nav__logo">
-        <img src="assets/images/jared-logo.png" alt="Jared Logo">
+        <!-- insert logo here -->
       </div>
 
       <div class="header-nav__menu-icon"></div>
@@ -30,86 +30,109 @@
       </div>
     </div>
   </header>
-
-  <div class="large-hero">
-    <picture>
-      <source srcset="assets/images/header-bg-xlarge.png" media="(min-width: 1200px)">
-      <source srcset="assets/images/header-bg-large.png" media="(min-width: 800px)">
-      <source srcset="assets/images/header-bg-medium.png" media="(min-width: 475px)">
-      <img class="large-hero__image" srcset="assets/images/header-bg-small.png" alt="Mountain view with fog">
-    </picture>
+  <div class="large-hero large-hero__bg">
       <div class="large-hero__text-content">
-        <div class="wrapper">
+        <div class="wrapper__title">
           <h1 class="large-hero__title">Hi, I'm Jared :)</h1>
           <h2 class="large-hero__subtitle">Web and Mobile Developer</h2>
-          <a class="btn" href="#projects">My Projects</a>
         </div>
+        <a class="btn" href="#projects">My Projects</a>
       </div>
   </div>
 
-  <div id="about" class="page-section">
+  <div id="about" class="page-section__about">
     <div class="wrapper">
       <div class="row row--gutters">
+
         <div class="row__medium-4">
-          <img srcset="assets/images/portrait.png" alt="Portrait of Jared">
-          <!--
           <picture>
-            <source srcset="assets/images/portrait-small.png" media="(max-width: 475px)">
-            <img srcset="assets/images/portrait.png" alt="Portrait of Jared">
+            <source srcset="assets/images/portrait-small.png" media="(max-width: 415px)">
+            <img class="row__image"srcset="assets/images/portrait.png" alt="Portrait of Jared">
           </picture>
-          -->
         </div>
+
         <div class="row__medium-8">
-          <h2 class="headline">What I&rsquo;m About</h2>
-          <p>I am a college and self-taught programmer aspiring to become a developer. My college classes taught me the powerful Java and C++, as well as some back-end languages such as SQL and PHP. In addition, I have had a class in HTML5 and CSS3 development which gave me more exposure to web development and design. For self-taught languages, I&rsquo;ve furthered my education using websites like Udemy in Swift, HTML5 and CSS3 alongside some Node.js, JavaScript, and Git/GitHub version control. I also have self-taught experience in Adobe Photoshop and Premiere.</p>
-  
-          <h2 class="headline headline--subhead"><strong>Frameworks</strong>, <strong>Tools</strong>, and <strong>Languages</strong> I&rsquo;ve worked with so far</h2>
-          <ul>
-            <li><strong>Languages:</strong> Swift, HTML, CSS, JavaScript, Python</li>
-            <li><strong>Back-end:</strong> PHP, MySQL</li>
-            <li><strong>Frameworks &amp; Tools:</strong> XCode, Node.js, Gulp, PostCSS</li>
+          <h2 class="headline">About Me</h2>
+          <p class="row__about">Associates Degree holder and self-taught programmer aspiring to become a web or mobile developer. Educated in Java and C++ as well as some back-end languages such as SQL and PHP. Strong knowledge of front end development topics and technologies: HTML5/CSS3, which provided more exposure to web development and design. Expanded development education using websites like Udemy to become more proficient in Swift, HTML5 and CSS3 alongside Node.js, JavaScript, and Git/GitHub version control. Additional self-taught experience in Adobe Photoshop and Premiere.</p>
+          <h2 class="headline headline--subhead"><strong>Tools</strong>, &amp; <strong>Languages</strong></h2>
+          <ul class="headline--subhead__list">
+            <li><strong>Languages:</strong> Swift, HTML, CSS, JavaScript, Python, PHP, MySQL</li>
+            <li><strong>Tools:</strong> XCode, Node.js, Gulp, PostCSS</li>
             <li><strong>Version Control:</strong> Git/GitHub</li>
             <li><strong>Other:</strong> Adobe Photoshop and Premiere</li>
             <li><strong>Certifications:</strong> <a href="https://the-cca.org">CCA Swift 1</a></li>
           </ul>
         </div> 
+
       </div>
     </div>
   </div>
 
-  <div id="projects" class="page-section page-section--colorbg">
-    <div class="wrapper">
-      <h2 class="headline headline--sky">Projects</h2>
-      <!--Place an image of project here-->
-      <h3 class="project-list">Clear View Escapes</h3>
-      <h4>Fictional Travel Website</h4>
-      <p>Built using HTML5/CSS3, JavaScript, Node.js, and many other web development tools</p>
+  <div class="projects-bg">
+    <div id="projects" class="page-section">
+      <div class="wrapper">
+        <div class="projects-bg__container">
 
-      <!--Place an image of project here-->
-      <h3 class="project-list">TicTacToe</h3>
-      <h4>iOS Game</h4>
-      <p>Built using Swift/XCode</p>
+          <h2 class="headline headline--alt">Projects</h2>
 
-      <!--Place an image of project here-->
-      <h3 class="project-list">What&rsquo;s the Weather?</h3>
-      <h4>iOS Weather App</h4>
-      <p>Built using Swift/XCode</p>
+          <div class="row row--gutters">
+            <div class="row__medium-6">
+              <h3 class="project-list">Clear View Escapes</h3>
+              <h4>Fictional Travel Website</h4>
+              <p>Built using HTML5/CSS3, JavaScript, Node.js, and many other web development tools</p>
+              <a class="btn__project">
+                <picture>
+                  <source srcset="assets/images/travel-site-small.jpg" media="(min-width: 415px)">
+                  <img src="assets/images/travel-site-xsmall.jpg">
+                </picture>               
+              </a>
+            </div>
+            <div class="row__medium-6">
+              <h3 class="project-list">TicTacToe</h3>
+              <h4>iOS Game</h4>
+              <p>Built using Swift/XCode</p>
+              <a class="btn__project"><img src="assets/images/tictactoe-small.png"></a>
+            </div>
+          </div>
 
-      <!--Place an image of project here-->
-      <h3 class="project-list">Task List</h3>
-      <h4>iOS To-Do App</h4>
-      <p>Built using Swift/XCode</p>
+          <div class="row row--gutters">
+            <div class="row__medium-6">
+              <h3 class="project-list">What&rsquo;s the Weather?</h3>
+              <h4>iOS Weather App</h4>
+              <p>Built using Swift/XCode</p>
+              <a class="btn__project">                  
+                  <img src="assets/images/whatstheweather-small.png">               
+              </a>
+            </div>
+            <div class="row__medium-6">
+              <h3 class="project-list">Task List</h3>
+              <h4>iOS To-Do App</h4>
+              <p>Built using Swift/XCode</p>
+              <a class="btn__project">
+                <picture>
+                  <source srcset="assets/images/todo-small.png" media="(min-width: 415px)">
+                  <img src="assets/images/todo-xsmall.png">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div id="Contact">
+  <div id="contact" class="page-section">
     <h2 class="headline">Looking to hire? <br> Contact me!</h2>
     <!-- Add more contact content here -->
   </div>
 
-  <footer>
-    <p>Copyright &copy; 2018 Jared Bates.</p>
-  </footer>
+  <div class="footer footer__bg">
+    <footer>
+      <div class="wrapper">
+        <p>Jared Bates - 2018</p>
+    </footer>
+  </div>
+  
 
   <script src="/temp/scripts/app.js"></script>
 </body>

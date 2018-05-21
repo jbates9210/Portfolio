@@ -4,7 +4,7 @@
     z-index: 2;
     
     @mixin atMedium {
-        background-color: rgba(23, 52, 117, .30);
+        background-color: rgba(1, 14, 92, .5);
     }
 
     &__logo {
@@ -14,14 +14,13 @@
 
         @mixin atMedium {
             left: auto;
-            transform: translateX(0)
         }
     }
 
     &__menu-icon {
         width: 20px;
         height: 20px;
-        background-color: #FFF;
+        background-color: $fontGrey;
         position: absolute;
         top: 10px;
         right: 10px;
@@ -33,8 +32,15 @@
 
     &__menu {
         display: none;
+        padding-top: 100px;
+        text-align: center;
 
         @mixin atMedium {
+            display: block;
+            padding-top: 0;
+        }
+
+        &--is-visible {
             display: block;
         }
     }
