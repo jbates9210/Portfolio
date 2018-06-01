@@ -3,8 +3,10 @@
     padding: 10px 0;
 
     &--pull-right {
+
         @mixin atMedium {
             float: right;
+            padding: 20px 0;
         }
     }
 
@@ -36,7 +38,13 @@
     a {
         color: $fontGrey;
         text-decoration: none;
-        padding: 15px;
+        padding: 5px 8px;
+        font-size: 1.2rem;
+
+        @mixin atMedium {
+            padding: 15px;
+            font-size: 1rem;
+        }
     }
 
 }

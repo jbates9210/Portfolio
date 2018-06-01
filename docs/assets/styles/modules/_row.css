@@ -1,6 +1,6 @@
 .row {
+
     @mixin clearfix;
-    
 
     &__image {
         display: block;
@@ -8,16 +8,22 @@
         margin-right: auto;
         width: auto;
         height: auto;
+
+        @mixin atMedium {
+            padding: 0 0 0 auto;
+            margin: 0 auto 0 auto;
+        }
     }
 
     &__about {
         text-align: justify;
+        line-height: 150%;
         
         @mixin atSmall {
-        left: 50%; right: 50%;
-        margin: 0 100px 0 100px;
-        text-align: center;
-        text-align: justify;
+            left: 50%; right: 50%;
+            margin: 0 auto 0 auto;
+            text-align: center;
+            text-align: justify;
         }
     }
 
@@ -42,15 +48,8 @@
     }
 
     @mixin atMedium {
-        &__medium-4 {
-            float: left;
-            width: 33.33%;
-        }
 
-        &__medium-8 {
-            float: left;
-            width: 66.66%;
-        }
+        margin-right: 5px;
 
         &__medium-6 {
             float: left;

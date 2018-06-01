@@ -37,7 +37,13 @@
         border-radius: .9375rem;
         background: $darkBlue;
         padding: .9375rem;
-        margin-left: -15px;
+        margin-left: -10px;
+
+        @mixin atMedium {
+            margin-left: -15px;
+            padding: .9375rem;
+            border-radius: .9375;
+        }
 
         &:hover {
             background: linear-gradient($blue, $darkBlue);

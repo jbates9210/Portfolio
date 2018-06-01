@@ -18,8 +18,7 @@
         position: absolute;
         top: 40%;
         margin: 0 auto;
-        transform: translateY(-50%);
-        left: 0;
+        transform: translateY(-30%);
         width: 100%;
         text-align: center;
     }
@@ -30,6 +29,7 @@
         color: $teal;
         margin: 0;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .9);
+        padding: 15px 0px;
 
         @mixin atSmall {
             font-size: 4rem;

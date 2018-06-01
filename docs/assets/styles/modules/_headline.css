@@ -16,7 +16,6 @@
 
         @mixin atSmall {
             font-size: 1.8rem;
-            
         }
 
         &__list {
@@ -30,4 +29,13 @@
             }
         }
     }
+
+    &__about-me {
+        padding: 0 65px 0 0;
+
+        @mixin atMedium {
+            padding: 0 0 50px 0;
+        }
+    }
+
 }

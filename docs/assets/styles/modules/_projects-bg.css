@@ -1,25 +1,28 @@
 .projects-bg {
 
-    background-image: url("../../assets/images/projects-bg.png");
-    position: relative;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
+    background-color: $darkGrey;
+    z-index: 1;
+    
 
     &__container {
-        overflow: hidden;
-        background: rgba(1, 14, 92, .5);
-        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-        border-radius: 20px;
-        padding: 20px;
-        margin: 10px;
+        margin: 0 5px 0 5px;
+        text-align: center;
+        
+        @mixin atMedium {
+            padding: 20px;
+            background: rgba(1, 14, 92, .5);        
+        }
     }
     
 
     @mixin atMedium {
+        background-image: url("../../assets/images/projects-bg.png");
+        position: relative;
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
     }
         
 }
