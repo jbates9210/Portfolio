@@ -17,6 +17,7 @@
         }
     }
 
+    /*
     &__logo {
         position: absolute;
         left: 50%;
@@ -26,6 +27,7 @@
             left: auto;
         }
     }
+    */
 
     &__menu-icon {
         width: 20px;

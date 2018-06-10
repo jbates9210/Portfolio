@@ -25,6 +25,7 @@
             float: left;
             display: block;
         }
+
     }
 
     li:last-child {
@@ -44,7 +45,12 @@
         @mixin atMedium {
             padding: 15px;
             font-size: 1rem;
+
+            &:hover {
+                color: $teal;
+            }
         }
+            
     }
 
 }
