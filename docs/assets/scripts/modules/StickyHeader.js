@@ -5,7 +5,7 @@ import smoothScroll from 'jquery-smooth-scroll';
 class StickyHeader {
     constructor() {
         this.headerNav = $('.header-nav');
-        this.btnTrigger = $('.btn');
+        this.trigger = $('.large-hero__subtitle');
         this.createHeaderWaypoint();
         this.headerLinks = $('.primary-nav a');
         this.smoothScrolling();
@@ -18,7 +18,7 @@ class StickyHeader {
     createHeaderWaypoint() {
         var that = this;
         new Waypoint({
-            element: this.btnTrigger[0],
+            element: this.trigger[0],
             handler: function(direction) {
                 if (direction == 'down') {
                     that.headerNav.addClass('header-nav--dark');
