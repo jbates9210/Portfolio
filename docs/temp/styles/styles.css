@@ -711,8 +711,13 @@ body, html {
 @media (min-width: 900px) {
 
 .header-nav {
+        position: fixed;
         background-color: rgba(1, 14, 92, .5)
 }
+
+        .header-nav--dark {
+            background-color: rgba(3, 49, 233, .85);
+        }
     }
 
 .header-nav__logo {
